@@ -1,0 +1,120 @@
+.hero-section {
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  color: #fff;
+  height: 70vh;
+  position: relative;
+  padding: 20px;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border: 4px solid #fff;
+  object-fit: cover;
+}
+
+.display-4 {
+  font-weight: bold;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #e0e0e0;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.interfaces-graphics {
+  top: -50px;
+  right: 10%;
+}
+
+.analytics {
+  top: 30%;
+  left: 70%;
+}
+
+.user-experience {
+  bottom: -50px;
+  left: 20%;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+  color: #d8d8d8;
+}
+
+.open-for-opportunities {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.blinking-dot {
+  color: #00d084;
+  font-size: 1rem;
+  animation: blink 2s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 20px 10px;
+    height: auto;
+  }
+
+  .display-4 {
+    font-size: 1.8rem;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .display-4 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

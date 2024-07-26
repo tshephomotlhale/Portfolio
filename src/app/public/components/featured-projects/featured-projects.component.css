@@ -1,0 +1,66 @@
+.container {
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+}
+
+.featured-work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+h2.text-black {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.btn-outline-light {
+  border-color: #000;
+  color: #000;
+  border-radius: 50px;
+  padding: 5px 20px;
+  margin-right: 15px;
+}
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+  color: #d8d8d8;
+}
+
+app-project-card {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .featured-work-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .controls {
+    margin-top: 15px;
+  }
+
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
