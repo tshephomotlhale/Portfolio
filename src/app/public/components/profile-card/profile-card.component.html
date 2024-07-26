@@ -1,0 +1,29 @@
+<div class="profile-card">
+  <div class="profile-image">
+    <img [src]="imageUrl" alt="{{ name }}">
+  </div>
+  <div class="profile-content">
+    <span class="badge">{{ role }}</span>
+    <h1>Hi, I'm {{ name }} <span class="wave">👋</span></h1>
+    <h2>your strategic partner for digital solutions</h2>
+    <p>{{ description }}</p>
+
+    <div class="stats">
+      <div class="stat-item">
+        <p>Years experience</p>
+        <h3>{{ yearsExperience }}+</h3>
+
+      </div>
+      <div class="stat-item">
+        <p>Projects completed</p>
+        <h3>{{ projectsCompleted }}+</h3>
+
+      </div>
+      <div class="stat-item">
+        <p>Industries served</p>
+        <h3>{{ industriesServed }}+</h3>
+
+      </div>
+    </div>
+  </div>
+</div>

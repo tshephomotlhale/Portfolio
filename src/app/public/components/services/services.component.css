@@ -1,0 +1,30 @@
+.services-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.services-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  color: #5B5E76;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+h3 {
+  color: #000;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #5B5E76;
+  font-size: 1.25rem;
+  font-weight: 600;
+}

@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="featured-work-header">
+    <h2 class="text-black">Featured Work</h2>
+    <div class="controls">
+      <button routerLink="/portfolio" class="btn-primary">View All</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <ng-container *ngFor="let project of projects">
+      <div class="col-md-4 mb-4">
+        <app-project-card
+          [imageSrc]="project.imageSrc"
+          [title]="project.title"
+          [description]="project.description">
+        </app-project-card>
+      </div>
+    </ng-container>
+  </div>
+</div>

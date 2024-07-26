@@ -1,0 +1,29 @@
+.logo-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.5);
+  padding: 1rem 0;
+}
+.logo-track {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 4800s linear infinite;
+}
+.logo {
+  max-width: 100px;
+  max-height: 50px;
+  margin-right: 5rem;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
