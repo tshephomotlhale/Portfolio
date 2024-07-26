@@ -1,7 +1,7 @@
 .hero-section {
   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   color: #fff;
-  height: 70vh;
+  height: 90vh;
   position: relative;
   padding: 20px;
 }
@@ -26,21 +26,6 @@
 .font-weight-bold {
   font-weight: 700;
   color: #ffffff;
-}
-
-.interfaces-graphics {
-  top: -50px;
-  right: 10%;
-}
-
-.analytics {
-  top: 30%;
-  left: 70%;
-}
-
-.user-experience {
-  bottom: -50px;
-  left: 20%;
 }
 
 .btn-primary {
@@ -71,6 +56,10 @@
   animation: blink 2s ease-in-out infinite;
 }
 
+.tech-stack-container {
+  margin-top: 40px; /* Add some margin to avoid overlay */
+}
+
 @keyframes blink {
   0% {
     opacity: 1;
@@ -97,6 +86,9 @@
     font-size: 1.2rem;
   }
 
+  .tech-stack-container {
+    margin-top: 30px; /* Adjust margin for smaller screens */
+  }
 }
 
 @media (max-width: 576px) {
@@ -116,5 +108,9 @@
   .btn-primary {
     padding: 8px 16px;
     font-size: 0.9rem;
+  }
+
+  .tech-stack-container {
+    margin-top: 20px; /* Adjust margin for smaller screens */
   }
 }
